@@ -1,6 +1,6 @@
 export default class Stack {
-  constructor(initalStack) {
-    this.stack = initalStack || [];
+  constructor(input = []) {
+    this.stack = [].concat(input);
   }
 
   isEmpty() {

@@ -10,8 +10,12 @@ describe("Stack", () => {
       const result = new Stack();
       expect(result.stack).toEqual([]);
     });
-    it("initializes with stack correctly", () => {
+    it("initializes with array input correctly", () => {
       const result = new Stack(initialStack);
+      expect(result.stack).toEqual(initialStack);
+    });
+    it("initializes with non array input correctly", () => {
+      const result = new Stack(sampleItem);
       expect(result.stack).toEqual(initialStack);
     });
   });
